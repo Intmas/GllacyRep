@@ -1,0 +1,333 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #ffffff;
+
+    background-color: #849d8f;
+    align-content: center;
+    background-image: url("/img/slide1-background.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    font: inherit;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    align-self: flex-end;
+    color: #ffffff;
+
+    padding: 5px 20px;
+    background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    opacity: 0.988;
+    position: absolute;
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+    border-radius: 20px;
+}
+button:hover,
+button:focus{
+    background:-webkit-linear-gradient(top,#f58669 0%,#ec6f5e 100%);
+    background:linear-gradient(to bottom,#f58669 0%,#ec6f5e 100%);
+    box-shadow:0 2px 2px #ac1000
+}
+
+button:active {
+    background-image: -moz-linear-gradient(90deg, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
+    box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+}
+
+li{
+    list-style-type: none;
+}
+
+.main-header{
+    display: flex;
+    width: 1200px;
+    justify-content: center;
+    margin: 0 auto auto;
+}
+.main-navigation{
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 1200px;
+}
+
+.main-header-logo{
+    margin-left: 27px;
+    width: 154px;
+    padding-top: 3px;
+    height: 70px;
+}
+
+.site-navigation{
+    line-height: 18px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 30px;
+
+    display: flex;
+    width: 406px;
+    height: 73px;
+}
+
+.site-nav-sub-menu{
+    position:absolute;
+    top:35px;
+    left:-7px;
+    z-index:30;
+    width:143px;
+    padding:0;
+    margin:0;
+    list-style:none;
+    border-radius:5px;
+    background-color:#f8f7f4;
+    box-shadow:3px 0 7px 0 #5a6b61,-3px 0 7px 0 #5a6b61,0 10px 15px 0 #5a6b61;
+    display:none
+}
+
+.sub-menu-item a{
+    position:relative;
+    padding:6px 20px;
+    line-height:16px;
+    color:#000
+}
+.sub-menu-item:last-child a{
+    border-radius:0 0 5px 5px
+}
+.sub-menu-item a:hover{
+    background-color:#fbded7
+}
+
+.user-navigation{
+    display: flex;
+    width: 400px;
+    height: 73px;
+    margin: 0;
+    padding: 0;
+
+    font-size: 14px;
+    line-height: 16px;
+    list-style: none;
+}
+
+.site-navigation li,
+.user-navigation li{
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.header-working-hours{
+    position: absolute;
+    padding-top: 73px;
+    text-align: right;
+    padding-left: 800px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.header-phone-number {
+    font-size: 22px;
+    line-height: 24px;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 2px;
+    display: block;
+}
+
+.slider{
+    display: flex;
+    min-height: 580px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-position: center;
+}
+.slider h3{
+    padding-top: 315px;
+    padding-left: 265px;
+    padding-right: 265px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.slider button{
+    margin: 10px;
+    font-size: 32px;
+    line-height: 44px;
+}
+.slide1{
+    background-image: url("/img/slide-1.png");
+}
+.slide2{
+    display: none;
+}
+.slide3{
+    display: none;
+}
+
+.gift{
+    display: flex;
+    min-height: 230px;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.gift h3{
+    font-size: 35px;
+    line-height: 20px;
+}
+
+.gift-jam{
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 13px;
+    width: 560px;
+    background-image: url("/img/raspberry.png");
+    border-radius: 25px;
+}
+
+.gift-choco{
+    flex-direction: column;
+    margin-left: 13px;
+    margin-right: 20px;
+    width: 560px;
+    background-image: url("/img/choco.png");
+}
+
+.gift button{
+    align-items: flex-end;
+}
+
+.promotion-list h3 {
+    font-size: 35px;
+    line-height: 41px;
+}
+
+.promotion-list p {
+    font-size: 18px;
+    line-height: 2px;
+}
+
+.bestseller{
+    display: flex;
+    flex-direction: row;
+    height: 350px;
+}
+
+.bestseller li{
+    float: left;
+    width: 267px;
+    min-height: 460px;
+
+}
+
+.bestseller-info{
+
+}
+
+.bestseller-img{
+
+}
+
+.bestseller-list span{
+    line-height: 22px;
+    font-weight: inherit;
+    color: white;
+}
+.price {
+    font-size: 45px;
+    line-height: 48px;
+}
+
+.section-wrapper{
+    display: flex;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    color: #323232;
+    background-image: url("/img/wafer.png");
+    line-height: 22px;
+}
+.feature h2{
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.blog {
+    display: flex;
+    background-image: url("/img/Strawberry.png");
+    flex-direction: column;
+    width: 560px;
+    min-height: 221px;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.subscribe-form {
+    background-image: url("/img/post-bg.png");
+    flex-direction: column;
+    width: 560px;
+    min-height: 221px;
+}
+
+.subscribe-form-wrapper{
+    background-image: url("/img/post-top-bg.png");
+    width: 550px;
+    height: 212px;
+}
+article {
+    color: #323232;
+}
+article h2{
+    font-size: 16px;
+    line-height: 22px;
+}
+article p{
+    font-size: 24px;
+    line-height: 30px;
+    text-decoration: underline;
+}
+
+.visually-hidden{
+    position:absolute;
+    clip:rect(1px 1px 1px 1px);
+    padding:0;
+    border:0;
+    height:1px;
+    width:1px;
+    overflow:hidden
+}
+
+
